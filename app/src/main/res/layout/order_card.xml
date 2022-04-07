@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="90dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:theme="@style/AppThemeMaterial"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_order"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp">
+
+
+            <TextView
+                android:id="@+id/text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:includeFontPadding="false"
+                android:textColor="@color/pumpkin"
+                android:text="ORDER ID 5"
+                android:layout_alignParentLeft="true"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/text_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="ETB 145.0"
+                android:textSize="14sp"
+                android:layout_below="@+id/text_id"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/text_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="2 Items"
+                android:layout_marginLeft="50dp"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/text_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="pending"
+                android:textStyle="italic"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:layout_below="@+id/text_items"
+                android:textColor="@color/tuts_blue"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"/>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</LinearLayout>
